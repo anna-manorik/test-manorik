@@ -4,31 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body>
       <header>
-          <nav>
-            <a href="">WebStudio</a>
-              <ul>
-                  <li><a href="">Студия</a></li>
-                  <li><a href="">Портфолия</a></li>
-                  <li><a href="">Контакты</a></li>
+          <nav class="nav">
+            <a href="" class="link"><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
+              <ul class="list">
+                  <li><a href="./index.html" class="nav-link link">Студия</a></li>
+                  <li><a href="./portfolio.html" class="nav-link link">Портфолио</a></li>
+                  <li><a href="" class="nav-link link">Контакты</a></li>
               </ul>
           </nav>
-          <ul>
-            <li><a href="mailto:info@example.com">info@example.com</a></li>
-            <li><a href="tel:+380961111">+38 096 1111</a></li>
+          <ul class="list">
+            <li><a href="mailto:info@example.com" class="contact-link link">info@example.com</a></li>
+            <li><a href="tel:+380961111" class="contact-link link">+38 096 1111</a></li>
           </ul>
       </header>
       <main>
-        <section>
-          <h1>ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br /> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-          <button name="Заказать услугу">Заказать услугу</button>
+        <section class="hero">
+          <h1>Эффективные решения <br /> для вашего бизнеса</h1>
+          <button name="Заказать услугу" class="button-hero">Заказать услугу</button>
         </section>
 
-        <section>
-          <h2>Преимущества</h2>
-          <ul>
+        <section class="section">
+          <h2 class="hidden-h2">Преимущества</h2>
+          <ul class="list">
             <li>
               <h3>Внимание к деталям</h3>
               <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
@@ -48,18 +49,18 @@
           </ul>
         </section>
 
-        <section>
+        <section class="section">
           <h2>Чем мы занимаемся</h2>
-          <ul>
+          <ul class="list">
             <li><img src="./images/img1-services.jpg" alt="Desktop" width="370"></li>
             <li><img src="./images/img2-services.jpg" alt="Phone" width="370"></li>
             <li><img src="./images/img3-services.jpg" alt="Laptop" width="370"></li>
           </ul>
         </section>
 
-        <section>
+        <section class="section">
           <h2>Наша команда</h2>
-          <ul>
+          <ul class="list">
             <li>
                 <img src="./images/img1.jpg" alt="Игорь Демьяненко" width="270" height="260">
                 <h3>Игорь Демьяненко</h3>
@@ -84,15 +85,13 @@
         </section>
       </main>
 
-      <footer>
-        <a href="">WebStudio</a>
+      <footer class="footer">
+        <a href="" class="link"><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
         <address>
           <p>г. Киев, пр-т Леси Украинки, 26</p>
           <a href="mailto:info@example.com">info@example.com</a><br />
           <a href="tel:+380961111">+38 096 1111</a>
         </address>
       </footer>
-      
-
   </body>
 </html>

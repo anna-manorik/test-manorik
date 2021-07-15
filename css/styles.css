@@ -1,0 +1,93 @@
+/* primary color of text #757575 */
+/* secondary color of text #212121 */
+/* white #ffffff */
+/* accent #2196F3 */
+/* secondary bg-color #F5F4FA */
+
+
+
+:root{
+    --primary-color: #757575;
+    --secondary-color: #212121;
+    --accent-color: #2196F3;
+}
+
+body{
+    color: var(--primary-color);
+    background: #ffffff;
+}
+
+.logo-web{
+    color: var(--accent-color);
+}
+
+.logo-studio{
+    color: #000000;
+}
+
+.footer .logo-studio{
+    color: #ffffff;
+}
+
+.nav-link{
+    color: var(--secondary-color);
+}
+
+.nav-link:hover,
+.nav-link:focus{
+    color: var(--accent-color);
+}
+
+.contact-link{
+    color: var(--primary-color);
+}
+
+.contact-link:hover,
+.contact-link:focus{
+    color: var(--accent-color);
+}
+
+.link{
+    text-decoration: none;
+}
+
+.list{
+    list-style: none;
+}
+
+.hero,
+.footer{
+    background-color: #2F303A;
+}
+
+h1{
+    color: white;
+    text-transform: uppercase;
+}
+
+.button-hero{
+    background-color: var(--accent-color);
+    color: white;
+}
+
+.section h3, 
+.section h2{
+    color: var(--secondary-color);
+}
+
+.section p{
+    color: var(--primary-color);
+}
+
+.hidden-h2{
+    visibility: hidden;
+}
+
+.footer p{
+    color: #ffffff;
+}
+
+.footer address > a{
+    color: rgba(255, 255, 255, 60%);
+    text-decoration: none;
+}

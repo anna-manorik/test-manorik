@@ -10,27 +10,39 @@
     --primary-color: #757575;
     --secondary-color: #212121;
     --accent-color: #2196F3;
+    --white-color: #ffffff;
 }
 
 body{
     color: var(--primary-color);
-    background: #ffffff;
+    background: var(--white-color);
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    line-height: 1.2;
 }
 
 .logo-web{
     color: var(--accent-color);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
 }
 
 .logo-studio{
     color: #000000;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
 }
 
 .footer .logo-studio{
-    color: #ffffff;
+    color: var(--white-color);
 }
 
 .nav-link{
     color: var(--secondary-color);
+    letter-spacing: 0.02em;
 }
 
 .nav-link:hover,
@@ -40,6 +52,7 @@ body{
 
 .contact-link{
     color: var(--primary-color);
+    letter-spacing: 0.02em;
 }
 
 .contact-link:hover,
@@ -60,19 +73,40 @@ body{
     background-color: #2F303A;
 }
 
+.hero{
+    text-align: center;
+    font-weight: 900;
+    font-size: 44px;
+    
+}
+
 h1{
-    color: white;
+    color: var(--white-color);
     text-transform: uppercase;
+    letter-spacing: 0.06em;
+    line-height: 1.4;
 }
 
 .button-hero{
     background-color: var(--accent-color);
-    color: white;
+    color: var(--white-color);
+    border: none;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    cursor: pointer;
 }
 
 .section h3, 
 .section h2{
     color: var(--secondary-color);
+    font-weight: 500;
+}
+
+.section > h2{
+    font-size: 36px;
+    text-align: center;
 }
 
 .section p{
@@ -83,12 +117,55 @@ h1{
     visibility: hidden;
 }
 
-.footer p{
-    color: #ffffff;
+.masters{
+    font-size: 16px;
+    text-align: center;
 }
 
-.footer address > a{
+.footer p{
+    color: var(--white-color);
+}
+
+address{
+    font-weight: 400;
+    line-height: 1.7;
+    font-style: normal;
+}
+
+address > a{
     color: rgba(255, 255, 255, 60%);
     text-decoration: none;
 }
+
+address > a:hover,
+address > a:focus{
+    color: var(--accent-color);
+}
+
+.examples h3{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 2;
+}
+
+.examples p{
+    font-size: 16px;
+    line-height: 2;
+}
+
+.button-filter{
+    color: var(--secondary-color);
+    background-color: #F5F4FA;
+    border: none;
+    font-size: 16px;
+    line-height: 1.6;
+    cursor: pointer;
+}
+
+.button-filter:hover,
+.button-filter:focus{
+    color: var(--white-color);
+    background-color: var(--accent-color);
+}
+
 

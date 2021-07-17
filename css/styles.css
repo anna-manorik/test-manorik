@@ -50,6 +50,10 @@ body{
     color: var(--accent-color);
 }
 
+.current-link{
+    color: var(--accent-color);
+}
+
 .contact-link{
     color: var(--primary-color);
     letter-spacing: 0.02em;
@@ -92,6 +96,7 @@ h1{
     color: var(--white-color);
     border: none;
     letter-spacing: 0.06em;
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.8;
@@ -157,6 +162,7 @@ address > a:focus{
     color: var(--secondary-color);
     background-color: #F5F4FA;
     border: none;
+    font-family: inherit;
     font-size: 16px;
     line-height: 1.6;
     cursor: pointer;

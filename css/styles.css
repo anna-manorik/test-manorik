@@ -43,6 +43,7 @@ body{
 .nav-link{
     color: var(--secondary-color);
     letter-spacing: 0.02em;
+    font-weight: 500;
 }
 
 .nav-link:hover,
@@ -57,6 +58,7 @@ body{
 .contact-link{
     color: var(--primary-color);
     letter-spacing: 0.02em;
+    font-weight: 500;
 }
 
 .contact-link:hover,
@@ -79,14 +81,15 @@ body{
 
 .hero{
     text-align: center;
-    font-weight: 900;
-    font-size: 44px;
     
 }
 
 h1{
     color: var(--white-color);
     text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+    font-size: 44px;
     letter-spacing: 0.06em;
     line-height: 1.4;
 }
@@ -123,6 +126,7 @@ h1{
 }
 
 .masters{
+    background-color: #F5F4FA;
     font-size: 16px;
     text-align: center;
 }
@@ -147,10 +151,14 @@ address > a:focus{
     color: var(--accent-color);
 }
 
+
+/* start styles for portfolio.html */
+
 .examples h3{
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 2;
+    color: var(--secondary-color);
 }
 
 .examples p{
@@ -164,8 +172,14 @@ address > a:focus{
     border: none;
     font-family: inherit;
     font-size: 16px;
+    font-weight: 500;
     line-height: 1.6;
     cursor: pointer;
+}
+
+.current-button{
+    color: var(--white-color);
+    background-color: var(--accent-color);
 }
 
 .button-filter:hover,

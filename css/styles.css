@@ -131,7 +131,12 @@ h1{
 }
 
 .hidden-h2{
-    visibility: hidden;
+    display: none;
+}
+
+.advantages h3{
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 .masters{

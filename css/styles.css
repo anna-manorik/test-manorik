@@ -15,6 +15,19 @@
     --background-color-light: #F5F4FA;
 }
 
+<<<<<<< Updated upstream
+=======
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+>>>>>>> Stashed changes
 body{
     color: var(--primary-color);
     background: var(--white-color);
@@ -22,6 +35,54 @@ body{
     font-size: 14px;
     letter-spacing: 0.03em;
     line-height: 1.2;
+<<<<<<< Updated upstream
+=======
+    
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    border-bottom: 1px solid #fcfcfc;
+}
+
+.header{
+    display: flex;
+}
+
+.conteiner{
+    align-items: center;
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+}
+
+.nav{
+    margin-left: 95px;
+}
+
+.nav-links{
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.nav-links .item{
+    margin-right: 50px;
+}
+
+.nav-links .item:last-child{
+    margin-right: 0;
+>>>>>>> Stashed changes
 }
 
 .logo-web{
@@ -43,6 +104,12 @@ body{
 }
 
 .nav-link{
+<<<<<<< Updated upstream
+=======
+    display: block;
+    padding: 32px 0;
+
+>>>>>>> Stashed changes
     color: var(--secondary-color);
     letter-spacing: 0.02em;
     font-weight: 500;
@@ -57,7 +124,25 @@ body{
     color: var(--accent-color);
 }
 
+<<<<<<< Updated upstream
 .contact-link{
+=======
+.nav-contact{
+    display: flex;
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.nav-contact .item + .item{
+    margin-left: 50px;
+}
+
+.contact-link{
+    display: block;
+    padding: 32px 0;
+
+>>>>>>> Stashed changes
     color: var(--primary-color);
     letter-spacing: 0.02em;
     font-weight: 500;
@@ -74,6 +159,10 @@ body{
 
 .list{
     list-style: none;
+<<<<<<< Updated upstream
+=======
+    padding-left: 0;
+>>>>>>> Stashed changes
 }
 
 .hero,
@@ -83,10 +172,19 @@ body{
 
 .hero{
     text-align: center;
+<<<<<<< Updated upstream
     
 }
 
 h1{
+=======
+    padding: 200px 0;
+    margin-bottom: 94px;
+}
+
+h1{
+    margin: 0 0 30px 0;
+>>>>>>> Stashed changes
     color: var(--white-color);
     text-transform: uppercase;
     text-align: center;
@@ -100,12 +198,23 @@ h1{
     background-color: var(--accent-color);
     color: var(--white-color);
     border: none;
+<<<<<<< Updated upstream
+=======
+    padding: 10px 32px;
+
+>>>>>>> Stashed changes
     letter-spacing: 0.06em;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.8;
     cursor: pointer;
+<<<<<<< Updated upstream
+=======
+
+    border-radius: 4px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+>>>>>>> Stashed changes
 }
 
 .button-hero:hover,
@@ -131,7 +240,46 @@ h1{
 }
 
 .hidden-h2{
+<<<<<<< Updated upstream
     display: none;
+=======
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.advantages{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 94px;
+    letter-spacing: 0.03em;
+}
+
+.advantages .item{
+    width: 270px;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.advantages .item:not(:last-child){
+    margin-right: 30px;
+}
+
+.advantages-img{
+    background-color: var(--background-color-light);
+    padding: 25px 0;
+    text-align: center;
+    margin-bottom: 30px;
+>>>>>>> Stashed changes
 }
 
 .advantages h3{
@@ -139,12 +287,68 @@ h1{
     font-weight: 700;
 }
 
+<<<<<<< Updated upstream
 .masters{
     background-color: var(--background-color-light);
+=======
+.advantages p{
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
+.our-services{
+    display: flex;
+    flex-direction: row;
+    padding: 58px 0 94px 0;
+}
+
+.our-services .item{
+    margin: 0; /* for 'li' need to use 'margin:0' */
+    width: 370px;
+}
+
+.our-services .item:not(:last-child){
+    margin-right: 30px;
+}
+
+.masters-section{
+    background-color: var(--background-color-light);
+    padding: 94px 0;
+}
+
+.masters{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    
+>>>>>>> Stashed changes
     font-size: 16px;
     text-align: center;
 }
 
+<<<<<<< Updated upstream
+=======
+.masters .item{
+    background-color: #fff;
+    width: 270px;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.masters-item{
+    padding: 30px 0;
+}
+
+
+/* Footer styles */
+
+.footer{
+    padding-top: 48px;
+    padding-bottom: 60px;
+}
+
+>>>>>>> Stashed changes
 .footer p{
     color: var(--white-color);
 }
@@ -168,6 +372,19 @@ address > a:focus{
 
 /* start styles for portfolio.html */
 
+<<<<<<< Updated upstream
+=======
+.examples{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.examples li{
+    width: 370px;
+}
+
+>>>>>>> Stashed changes
 .examples h3{
     font-size: 18px;
     font-weight: 700;
@@ -179,6 +396,10 @@ address > a:focus{
     color: var(--primary-color);
     font-size: 16px;
     line-height: 2;
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 }
 
 .button-filter{

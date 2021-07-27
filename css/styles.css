@@ -331,30 +331,17 @@ address > a:focus{
 
 /* start styles for portfolio.html */
 
-.examples{
+.portfolio-menu{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 94px 0 48px 0;
+
 }
 
-.examples li{
-    width: 370px;
-}
+.button-filter {
+    padding: 6px 22px;
 
-.examples h3{
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 2;
-    color: var(--secondary-color);
-}
-
-.examples p{
-    color: var(--primary-color);
-    font-size: 16px;
-    line-height: 2;
-}
-
-.button-filter{
     color: var(--secondary-color);
     background-color: var(--background-color-light);
     border: none;
@@ -363,6 +350,11 @@ address > a:focus{
     font-weight: 500;
     line-height: 1.6;
     cursor: pointer;
+    border-radius: 4px;
+}
+
+.portfolio-menu .item:not(:last-child){
+    margin-right: 8px;
 }
 
 .current-button{
@@ -374,6 +366,55 @@ address > a:focus{
 .button-filter:focus{
     color: var(--white-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
 }
 
+.portfolio-items{
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-left: -30px;
+    margin-bottom: 94px;
+}
+
+.portfolio-items > .item{
+    /* flex-basis: calc((100% - 120px) / 3); */
+    width: 370px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    padding: 0;
+
+    border: 1px solid #EEEEEE;
+}
+
+.portfolio-items > .item:hover,
+.portfolio-items > .item:focus{
+    cursor: pointer;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-items h3{
+ 
+
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+    color: var(--secondary-color);
+}
+
+.portfolio-items p{
+ 
+    
+    color: var(--primary-color);
+    font-size: 16px;
+    line-height: 2;
+}
+
+.portfolio-title{
+    padding: 30px;
+}
 

@@ -35,7 +35,7 @@ body{
     
 }
 
-ul{
+ul, p{
     margin: 0;
     padding: 0;
 }
@@ -43,6 +43,10 @@ ul{
 h1,h2,h3{
     margin: 0;
     padding: 0;
+}
+
+img{
+    display: block;
 }
 
 header{
@@ -54,7 +58,7 @@ header{
 }
 
 .conteiner{
-    align-items: center;
+    /* align-items: center; */
     width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
@@ -62,13 +66,16 @@ header{
 }
 
 .nav{
-    margin-left: 95px;
+    display: flex;
+    align-items: center;
+    
 }
 
 .nav-links{
     display: flex;
     margin-top: 0;
     margin-bottom: 0;
+    margin-left: 94px;
 }
 
 .nav-links .item{
@@ -157,11 +164,14 @@ header{
 .hero{
     text-align: center;
     padding: 200px 0;
-    margin-bottom: 94px;
 }
 
 h1{
-    margin: 0 0 30px 0;
+    width: 696px;
+    margin: auto;
+    padding: auto;
+    margin-bottom: 30px;
+
     color: var(--white-color);
     text-transform: uppercase;
     font-weight: 900;
@@ -199,7 +209,7 @@ h1{
     font-weight: 500;
 }
 
-.section > h2{
+.section h2{
     font-size: 36px;
     text-align: center;
     font-weight: 700;
@@ -223,10 +233,13 @@ h1{
     overflow: hidden;
 }
 
+.adv-section{
+    padding-top: 94px;
+}
+
 .advantages{
     display: flex;
     flex-direction: row;
-    margin-bottom: 94px;
     letter-spacing: 0.03em;
 }
 
@@ -234,7 +247,6 @@ h1{
     width: 270px;
     margin: 0;
     padding: 0;
-    
 }
 
 .advantages .item:not(:last-child){
@@ -251,6 +263,7 @@ h1{
 .advantages h3{
     text-transform: uppercase;
     font-weight: 700;
+    margin-bottom: 10px;
 } 
 
 .advantages p{
@@ -258,10 +271,14 @@ h1{
     letter-spacing: 0.03em;
 }
 
+.our-services-section{
+    padding: 94px 0;
+}
+
 .our-services{
     display: flex;
     flex-direction: row;
-    padding: 58px 0 94px 0;
+    margin-top: 58px;
 }
 
 .our-services .item{
@@ -280,7 +297,7 @@ h1{
 
 .masters{
     display: flex;
-    padding-top: 50px;
+    margin-top: 50px;
     
     font-size: 16px;
     text-align: center;
@@ -294,6 +311,10 @@ h1{
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+}
+
+.masters .item h3{
+    margin-bottom: 10px;
 }
 
 .masters .item:last-child{
@@ -317,12 +338,17 @@ h1{
 }
 
 address{
+    padding-top: 26px;
+    width: 231px;
+
     font-weight: 400;
     line-height: 1.7;
     font-style: normal;
 }
 
 address > a{
+    display: block;
+    margin-top: 10px;
     color: rgba(255, 255, 255, 60%);
     text-decoration: none;
 }
@@ -335,12 +361,14 @@ address > a:focus{
 
 /* start styles for portfolio.html */
 
+.menu-section{
+    padding: 94px 0 48px 0;
+}
+
 .portfolio-menu{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 94px 0 48px 0;
-
 }
 
 .button-filter {
@@ -371,7 +399,10 @@ address > a:focus{
     color: var(--white-color);
     background-color: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 
+.portfolio-section{
+    padding-bottom: 94px;
 }
 
 .portfolio-items{
@@ -380,12 +411,9 @@ address > a:focus{
 
     display: flex;
     flex-wrap: wrap;
-
-    margin-bottom: 94px;
 }
 
 .portfolio-items img{
-    display: block;
     margin: 0;
     padding: 0;
 }
@@ -430,5 +458,9 @@ address > a:focus{
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
     padding: 30px;
+}
+
+.portfolio-title h3{
+    margin-bottom: 4px;
 }
 

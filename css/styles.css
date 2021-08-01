@@ -350,14 +350,13 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    fill: blue;
 }
 
 .social-link:hover,
 .social-link:focus{
     border-radius: 50%;
     background-color: var(--accent-color);
-    stroke: #fff;
+    fill: #fff;
 }
 
 

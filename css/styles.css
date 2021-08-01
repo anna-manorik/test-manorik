@@ -357,7 +357,7 @@ h1{
 .social-link:focus{
     border-radius: 50%;
     background-color: var(--accent-color);
-    fill: #fff;
+    stroke: #fff;
 }
 
 

@@ -352,6 +352,13 @@ h1{
     align-items: center;
 }
 
+.social-link:hover,
+.social-link:focus{
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    fill: #fff;
+}
+
 
 
 /* Footer styles */

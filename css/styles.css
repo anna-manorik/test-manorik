@@ -13,6 +13,7 @@
     --white-color: #ffffff;
     --background-color-dark: #2F303A;
     --background-color-light: #F5F4FA;
+    --icon-color: #AFB1B8;
 }
 
 html{
@@ -350,13 +351,14 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    fill: var(--icon-color);
 }
 
 .social-link:hover,
 .social-link:focus{
     border-radius: 50%;
     background-color: var(--accent-color);
-    fill: #fff;
+    fill: var(--white-color);
 }
 
 

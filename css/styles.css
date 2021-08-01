@@ -147,6 +147,13 @@ header{
     color: var(--accent-color);
 }
 
+.icon-contact{
+    width: 16px;
+    height: 12px;
+    border: 1px solid black;
+    align-items: center;
+}
+
 .link{
     text-decoration: none;
 }

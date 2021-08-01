@@ -338,9 +338,16 @@ h1{
 
 .masters-contact{
     padding: 0 32px;
+    margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
+}
+
+.cosial-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 

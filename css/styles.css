@@ -150,6 +150,11 @@ header{
     fill: var(--accent-color);
 }
 
+.icon-contact{
+    display: flex;
+    align-items: center;
+}
+
 .link{
     text-decoration: none;
 }

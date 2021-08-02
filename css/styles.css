@@ -147,10 +147,7 @@ header{
 .contact-link:hover,
 .contact-link:focus{
     color: var(--accent-color);
-}
-
-.mail-icon::before{
-    background-image: url(../images/envelope.svg);
+    fill: var(--accent-color);
 }
 
 .link{

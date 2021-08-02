@@ -149,11 +149,8 @@ header{
     color: var(--accent-color);
 }
 
-.icon-contact{
-    width: 16px;
-    height: 12px;
-
-    border: 1px solid black;
+.mail-icon::before{
+    background-image: url(../images/envelope.svg);
 }
 
 .link{

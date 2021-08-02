@@ -153,6 +153,10 @@ header{
     fill: var(--accent-color);
 }
 
+.icon-contact{
+    display: flex;
+}
+
 
 .link{
     text-decoration: none;

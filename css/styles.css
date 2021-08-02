@@ -146,14 +146,10 @@ header{
 
 .contact-link:hover,
 .contact-link:focus{
-    /* color: var(--accent-color); */
+    color: var(--accent-color);
     fill: var(--accent-color);
 }
 
-.icon-contact{
-    display: flex;
-    align-items: center;
-}
 
 .link{
     text-decoration: none;

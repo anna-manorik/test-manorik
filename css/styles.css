@@ -392,23 +392,25 @@ h1{
     
 }
 
-.clients-list .item{
-    width: 170px;
-    height: 92px;
-    border: 1px solid var(--icon-color);
-    border-radius: 4px;
+/* .clients-list .item{
+    
+    
+} */
+
+.client-link{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.client-link{
+    width: 170px;
+    height: 92px;
     
-    /* fill: var(--icon-color); */
+    fill: var(--icon-color);
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
 }
 
-.clients-list .item:hover,
-.clients-list .item:focus{
+.client-link:hover,
+.client-link:focus{
     fill: var(--accent-color);
     border: 1px solid var(--accent-color);
 }

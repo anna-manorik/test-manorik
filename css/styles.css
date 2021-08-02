@@ -404,7 +404,7 @@ h1{
 
 .client-link{
     
-    fill: var(--icon-color);
+    /* fill: var(--icon-color); */
 }
 
 .clients-list .item:hover,

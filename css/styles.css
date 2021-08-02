@@ -365,8 +365,9 @@ h1{
 
 /* Footer styles */
 
-.footer{
+.footer > .conteiner{
     padding: 60px 0;
+    display: flex;
 }
 
 .footer p{
@@ -375,6 +376,7 @@ h1{
 
 address{
     margin-top: 26px;
+    width: 231px;
 
     font-weight: 400;
     line-height: 1.7;
@@ -392,6 +394,38 @@ address > a:hover,
 address > a:focus{
     color: var(--accent-color);
 }
+
+.social-footer{
+    width: 206px;
+    margin-left: 70px;
+}
+
+.h2-footer{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+
+.social-link-footer{
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--white-color);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.social-link-footer:not(:last-child){
+    margin-right: 10px;
+}
+
+.social-link-footer:hover,
+.social-link-footer:focus{
+    background-color: var(--accent-color);
+}
+
  
 
 /* start styles for portfolio.html */

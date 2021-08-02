@@ -399,8 +399,15 @@ h1{
     border-radius: 4px;
 }
 
-.client-link:hover,
-.client-link:focus{
+.client-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--icon-color);
+}
+
+.clients-list .item:hover,
+.clients-list .item:focus{
     fill: var(--accent-color);
     border: 1px solid var(--accent-color);
 }

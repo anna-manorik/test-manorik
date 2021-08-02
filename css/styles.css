@@ -404,6 +404,12 @@ address > a:focus{
     margin-bottom: 20px;
     text-transform: uppercase;
     color: var(--white-color);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.social-contact-footer{
+    display: flex;
 }
 
 .social-link-footer{

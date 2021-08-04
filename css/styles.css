@@ -315,7 +315,6 @@ h1{
 .masters-section{
     background-color: var(--background-color-light);
     padding: 94px 0;
-    margin-bottom: 94px;
 }
 
 .masters{
@@ -351,11 +350,8 @@ h1{
 }
 
 .masters-contact{
-    /* padding: 0 32px;
-    margin-bottom: 30px; */
     display: flex;
     justify-content: space-between;
-    border: 1px solid blue;
 }
 
 .social-link{
@@ -375,7 +371,7 @@ h1{
 }
 
 .clients-section{
-    margin-bottom: 94px;
+    padding: 94px 0;
 }
 
 .clients-list{
@@ -413,6 +409,7 @@ h1{
 .footer > .conteiner{
     padding: 60px 0;
     display: flex;
+    align-items: baseline;
 }
 
 .footer p{
@@ -441,8 +438,6 @@ address > a:focus{
 }
 
 .social-footer{
-    width: 206px;
-    margin-top: 10px;
     margin-left: 70px;
 }
 
@@ -469,7 +464,7 @@ address > a:focus{
     border-radius: 50%;
 }
 
-.social-link-footer:not(:last-child){
+.social-contact-footer .item:not(:last-child){
     margin-right: 10px;
 }
 

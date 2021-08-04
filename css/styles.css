@@ -136,7 +136,8 @@ header{
 }
 
 .contact-link{
-    display: block;
+    display: flex;
+    align-items: center;
     padding: 32px 0;
 
     color: var(--primary-color);
@@ -153,10 +154,10 @@ header{
     fill: var(--accent-color);
 }
 
-.icon-contact{
+/* .icon-contact{
     display: flex;
     align-items: center;
-}
+} */
 
 
 .link{

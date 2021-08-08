@@ -50,7 +50,13 @@
       <main>
         <section class="hero">
           <h1>Эффективные решения для вашего бизнеса</h1>
-          <button name="Заказать услугу" class="button-hero">Заказать услугу</button>
+          <button name="Заказать услугу" class="button-hero" data-modal-open>Заказать услугу</button>
+          
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button data-modal-close>Close</button>
+            </div>
+          </div>
         </section>
 
         <section class="adv-section section">
@@ -101,9 +107,18 @@
           <div class="conteiner">
             <h2>Чем мы занимаемся</h2>
             <ul class="our-services list">
-              <li class="item"><img src="./images/img1-services.jpg" alt="Desktop" width="370"></li>
-              <li class="item"><img src="./images/img2-services.jpg" alt="Phone" width="370"></li>
-              <li class="item"><img src="./images/img3-services.jpg" alt="Laptop" width="370"></li>
+              <li class="item">
+                <img src="./images/img1-services.jpg" alt="Desktop" width="370">
+                <span class="our-services-discrip">Десктопные приложения</span>
+              </li>
+              <li class="item">
+                <img src="./images/img2-services.jpg" alt="Phone" width="370">
+                <span class="our-services-discrip">Мобильные приложения</span>
+              </li>
+              <li class="item">
+                <img src="./images/img3-services.jpg" alt="Laptop" width="370">
+                <span class="our-services-discrip">Дизайнерские решения</span>
+              </li>
             </ul>
           </div>
         </section>
@@ -361,5 +376,6 @@
           </div>
         </div>
       </footer>
+      <script src="./js/modal.js"></script>
   </body>
 </html>

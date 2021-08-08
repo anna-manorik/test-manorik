@@ -269,11 +269,14 @@ h1{
 .modal{
     width: 528px;
     height: 582px;
+    padding: 8px;
 
     position: absolute;
     top: 50%;
     left: 50%;
     background-color: var(--white-color);
+
+    text-align: right;
 
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms var(--timing-function);
@@ -281,6 +284,16 @@ h1{
 
 .backdrop.is-hidden .modal{
     transform: translate(-50%, -50%) scale(0.7);
+}
+
+.btn-close{
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+    border: 1px solid var(--icon-color);
+    background-color: var(--white-color);
+    cursor: pointer;
 }
 
 .section h3, 

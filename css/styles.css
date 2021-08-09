@@ -115,8 +115,7 @@ header{
     letter-spacing: 0.02em;
     font-weight: 500;
 
-    transition: color 250ms var(--timing-function), 
-    transform 250ms var(--timing-function);
+    transition: color 250ms var(--timing-function);
 }
 
 .nav-link:hover,

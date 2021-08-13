@@ -379,9 +379,12 @@ h1{
     position: absolute;
     transform: translate(10px, 70px);
     fill: var(--secondary-color);
+
+    transition: fill 250ms var(--timing-function);
 }
 
-.modal-input:hover + .modal-svg{
+.modal-input:hover + .modal-svg,
+.modal-input:focus + .modal-svg{
     fill: var(--accent-color);
 }
 

@@ -290,17 +290,19 @@ h1{
 }
 
 .modal{
-    width: 528px;
-    height: 582px;
-    padding: 8px;
-    
-
     position: absolute;
     top: 50%;
     left: 50%;
-    background-color: var(--white-color);
+    width: 528px;
+    height: 582px;
+    padding: 38px;
 
-    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+
+    background-color: var(--white-color);
     border-radius: 4px;
 
     transform: translate(-50%, -50%) scale(1);
@@ -312,6 +314,9 @@ h1{
 }
 
 .btn-close{
+    position: absolute;
+    transform: translate(450px, -30px);
+
     width: 30px;
     height: 30px;
 
@@ -319,6 +324,64 @@ h1{
     border: 1px solid var(--icon-color);
     background-color: var(--white-color);
     cursor: pointer;
+    color: #000;
+
+    transition: color 250ms var(--timing-function);
+
+}
+
+.btn-close:hover,
+.btn-close:focus{
+    color: var(--accent-color);
+}
+
+.modal-title{
+    margin-bottom: 18px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color);
+}
+
+.modal-input{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    transition: border 250ms var(--timing-function);
+}
+
+.modal-input:hover,
+.modal-input:focus{
+    border: 1px solid var(--accent-color);
+}
+
+/* .modal-input:hover + .modal-label{
+    color: yellow;
+} */
+
+.modal-textarea{
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+
+    transition: border 250ms var(--timing-function);
+}
+
+.modal-textarea:hover,
+.modal-textarea:focus{
+    border: 1px solid var(--accent-color);
+}
+
+.modal-svg{
+    position: absolute;
+    fill: var(--secondary-color);
 }
 
 .section h3, 

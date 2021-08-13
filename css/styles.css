@@ -381,6 +381,7 @@ h1{
 
 .modal-svg{
     position: absolute;
+    transform: translate(10px, 40px);
     fill: var(--secondary-color);
 }
 

@@ -360,10 +360,6 @@ h1{
     border: 1px solid var(--accent-color);
 }
 
-/* .modal-input:hover + .modal-label{
-    color: yellow;
-} */
-
 .modal-textarea{
     width: 100%;
     height: 120px;
@@ -381,8 +377,12 @@ h1{
 
 .modal-svg{
     position: absolute;
-    transform: translate(10px, 40px);
+    transform: translate(10px, 70px);
     fill: var(--secondary-color);
+}
+
+.modal-input:hover + .modal-svg{
+    fill: var(--accent-color);
 }
 
 .section h3, 

@@ -377,18 +377,18 @@ h1{
 
 .modal-svg{
     position: absolute;
-    transform: translate(10px, 65px);
+    transform: translate(10px, 67px);
     fill: var(--secondary-color);
 
     transition: fill 250ms var(--timing-function);
 }
 
 .svg-tel{
-    transform: translate(10px, 130px);
+    transform: translate(10px, 136px);
 }
 
 .svg-email{
-    transform: translate(10px, 180px);
+    transform: translate(10px, 200px);
 }
 
 .modal-input:hover + .modal-svg,

@@ -359,6 +359,11 @@ h1{
 .modal-input:hover,
 .modal-input:focus{
     border: 1px solid var(--accent-color);
+    cursor: pointer;
+}
+
+.modal-label{
+    margin-bottom: 5px;
 }
 
 .modal-textarea{
@@ -395,6 +400,27 @@ h1{
 .modal-input:hover + .modal-svg,
 .modal-input:focus + .modal-svg{
     fill: var(--accent-color);
+    cursor: pointer;
+}
+
+.checkbox-modal{
+    display: flex;
+}
+
+.checkbox-modal input{
+    visibility: hidden;
+}
+
+.checkbox{
+    display: block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 2px;
+}
+
+.checkbox-modal input:checked + .checkbox{
+    background-image: url(../images/symbol-defs.svg#icon-check);
 }
 
 .section h3, 

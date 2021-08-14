@@ -64,13 +64,11 @@ header{
     width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
-
 }
 
 .nav{
     display: flex;
     align-items: center;
-    
 }
 
 .nav-links{
@@ -289,13 +287,16 @@ h1{
 
 }
 
+
+/* Start Modal window styles */
+
 .modal{
     position: absolute;
     top: 50%;
     left: 50%;
     width: 528px;
     height: 582px;
-    padding: 38px;
+    padding: 40px;
 
     display: flex;
     flex-direction: column;
@@ -364,16 +365,30 @@ h1{
 
 .modal-label{
     margin-bottom: 5px;
+    color: var(--primary-color);
+    font-size: 12px;
+    letter-spacing: 0.01em;
 }
 
 .modal-textarea{
     width: 100%;
     height: 120px;
+    padding: 18px;
+    margin-bottom: 20px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     resize: none;
 
+    font-size: 14px;
+    letter-spacing: 0.01em;
+
     transition: border 250ms var(--timing-function);
+}
+
+.modal-textarea::placeholder{
+    color: rgba(117, 117, 117, 0.5);
+    font-size: 14px;
+    letter-spacing: 0.01em;
 }
 
 .modal-textarea:hover,
@@ -383,18 +398,18 @@ h1{
 
 .modal-svg{
     position: absolute;
-    transform: translate(10px, 67px);
+    transform: translate(10px, 70px);
     fill: var(--secondary-color);
 
     transition: fill 250ms var(--timing-function);
 }
 
 .svg-tel{
-    transform: translate(10px, 133px);
+    transform: translate(10px, 138px);
 }
 
 .svg-email{
-    transform: translate(10px, 200px);
+    transform: translate(10px, 210px);
 }
 
 .modal-input:hover + .modal-svg,
@@ -405,6 +420,7 @@ h1{
 
 .checkbox-modal{
     display: flex;
+    margin-bottom: 30px;
 }
 
 .checkbox-modal input{
@@ -415,13 +431,45 @@ h1{
     display: block;
     width: 16px;
     height: 15px;
+    margin-right: 10px;
     border: 2px solid var(--secondary-color);
     border-radius: 2px;
 }
 
 .checkbox-modal input:checked + .checkbox{
-    background-image: url(../images/symbol-defs.svg#icon-check);
+    width: 16px;
+    height: 15px;
+    border: 0;
+    background-image: url(../images/icon-check.svg);
 }
+
+.btn-submit-modal{
+    width: 200px;
+    height: 50px;
+    background-color: var(--accent-color);
+    padding: 10px 56px;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    transition: background-color 250ms var(--timing-function);
+}
+
+.btn-submit-modal:hover,
+.btn-submit-modal:focus{
+    background-color: #188CE8;
+}
+
+/* End Modal window styles */
+
 
 .section h3, 
 .section h2{
@@ -531,12 +579,6 @@ h1{
     text-transform: uppercase;
     text-align: center;
 }
-
-/* .our-services .item:hover::after{
-    opacity: 0;
-    transform: translateY(-100%);
-} */
-
 
 .masters-section{
     background-color: var(--background-color-light);
@@ -674,7 +716,7 @@ address > a:focus{
 }
 
 .social-footer{
-    margin-left: 70px;
+    margin-left: 90px;
 }
 
 .h2-footer{
@@ -711,9 +753,54 @@ address > a:focus{
     background-color: var(--accent-color);
 }
 
+.follow-footer{
+    margin-left: 90px;
+}
+
+.follow-form{
+    display: flex;
+}
+
+.follow-input{
+    width: 358px;
+    background-color: #2F303A;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding: 16px;
+    margin-right: 14px;
+}
+
+.follow-form input::placeholder{
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+}
+
+.btn-follow-footer{
+    width: 200px;
+    height: 50px;
+    background-color: var(--accent-color);
+    padding: 10px 28px;
+
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+
+    border: none;
+    border-radius: 4px;
+
+    transition: background-color 250ms var(--timing-function);
+}
+
+.btn-follow-footer:hover,
+.btn-follow-footer:focus{
+    background-color: #188CE8;
+}
+
  
 
-/* start styles for portfolio.html */
+/* Start styles for portfolio.html */
 
 .portfolio-section{
     padding: 94px 0;

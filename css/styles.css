@@ -768,6 +768,7 @@ address > a:focus{
     border-radius: 4px;
     padding: 16px;
     margin-right: 14px;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .follow-form input::placeholder{
@@ -777,6 +778,9 @@ address > a:focus{
 }
 
 .btn-follow-footer{
+    display: flex;
+    align-items: baseline;
+
     width: 200px;
     height: 50px;
     background-color: var(--accent-color);
@@ -798,10 +802,18 @@ address > a:focus{
     background-color: #188CE8;
 }
 
-.btn-follow-footer::before{
+/* .btn-follow-footer::before{
     content:'';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    display: block;
+    width: 24px;
+    height: 24px;
+
     background-image: url(../images/icon-send.svg);
-}
+} */
 
  
 

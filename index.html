@@ -78,11 +78,14 @@
               <label for="comment" class="modal-label">Комментарий</label>
               <textarea name="name" id="comment" placeholder="Введите текст" class="modal-textarea"></textarea>
               
-              <label for="" class="checkbox-modal">
-                <input type="checkbox">
+              <label for="check" class="checkbox-modal">
+                <input type="checkbox" name="check-policy" id="check">
                 <span class="checkbox"></span>
-                Соглашаюсь с рассылкой и принимаю<a href="">Условия договора</a>
+                <span>Соглашаюсь с рассылкой и принимаю&nbsp;</span><a href="">Условия договора</a>
               </label>
+
+              <button type="submit" class="btn-submit-modal">Отправить</button>
+
             </div>
           </div>
         </section>
@@ -402,6 +405,15 @@
               </li>
             </ul>
           </div>
+
+          <div class="follow-footer">
+            <h2 class="h2-footer">Подпишитесь на рассылку</h2>
+            <form action="" class="follow-form">
+              <input type="text" name="email" placeholder="E-mail" class="follow-input">
+              <button type="submit" class="btn-follow-footer">Подписаться</button>
+            </form>
+          </div>
+
         </div>
       </footer>
       <script src="./js/modal.js"></script>

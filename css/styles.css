@@ -409,7 +409,7 @@ h1{
 }
 
 .svg-email{
-    transform: translate(10px, 210px);
+    transform: translate(10px, 207px);
 }
 
 .modal-input:hover + .modal-svg,
@@ -796,6 +796,11 @@ address > a:focus{
 .btn-follow-footer:hover,
 .btn-follow-footer:focus{
     background-color: #188CE8;
+}
+
+.btn-follow-footer::before{
+    content:'';
+    background-image: url(../images/icon-send.svg);
 }
 
  

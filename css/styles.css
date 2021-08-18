@@ -394,6 +394,7 @@ h1{
 
 .modal-textarea:hover,
 .modal-textarea:focus{
+    outline: none;
     border: 1px solid var(--accent-color);
 }
 

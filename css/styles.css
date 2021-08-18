@@ -361,6 +361,7 @@ h1{
 .modal-input:focus{
     border: 1px solid var(--accent-color);
     cursor: pointer;
+    outline: none;
 }
 
 .modal-label{
@@ -411,6 +412,7 @@ h1{
 .svg-email{
     transform: translate(10px, 207px);
 }
+
 
 .modal-input:hover + .modal-svg,
 .modal-input:focus + .modal-svg{

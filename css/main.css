@@ -722,16 +722,16 @@ h1 {
   font-style: normal;
 }
 
-.footer-contact {
+.footer-address a {
   display: block;
   margin-top: 10px;
-  color: white;
   text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-contact:hover, .footer-contact:focus {
+.footer-address a:hover, .footer-address a:focus {
   color: #2196F3;
 }
 

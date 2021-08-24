@@ -1,0 +1,22 @@
+// Logo header
+
+@mixin logo-color ($color) {
+    color: $color;  
+}
+
+%logo-font{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.logo-web{
+    @include logo-color($accent-color);
+    @extend %logo-font;
+}
+
+.logo-studio{
+    @include logo-color($black-color);
+    @extend %logo-font;
+}
+

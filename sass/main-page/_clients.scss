@@ -1,0 +1,35 @@
+.clients-section{
+    padding: 94px 0;
+}
+
+.clients-list{
+    display: flex;
+    margin-top: 50px;
+}
+
+.clients-list .item:not(:last-child){
+    margin-right: 30px;
+}
+
+.client-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    
+    fill: $icon-color;
+    border: 1px solid $icon-color;
+    border-radius: 4px;
+
+    transition: fill 250ms $timing-function,
+    border 250ms $timing-function;
+
+    &:hover,
+    &:focus{
+        fill: $accent-color;
+        border: 1px solid $accent-color;
+    }
+}
+
+

@@ -1,0 +1,73 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body{
+    color: $primary-color;
+    background: $white-color;
+    font-family: $font-family-primary;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    line-height: 1.2;
+    
+}
+
+h1,h2,h3,ul,p {
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    display: block;
+}
+
+.conteiner{
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.list{
+    list-style: none;
+    padding-left: 0;
+}
+
+.section h3, 
+.section h2{
+    color: $secondary-color;
+    font-weight: 500;
+}
+
+.section h2{
+    font-size: 36px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.section p{
+    color: $primary-color;
+}
+
+.hidden-h2{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}

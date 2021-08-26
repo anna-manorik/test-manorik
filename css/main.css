@@ -18,7 +18,7 @@ html {
 body {
   color: #757575;
   background: #ffffff;
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
   line-height: 1.2;
@@ -86,7 +86,7 @@ img {
 }
 
 .logo-web, .logo-studio {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
 }

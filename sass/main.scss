@@ -1,19 +1,19 @@
 @import './utils/variables';
-@import './components/common';
+@import './base/common';
 @import './components/header';
 @import './components/logo';
 @import './components/navigation';
 @import './components/header-contact';
-@import './main-page/hero';
+@import './layouts/hero';
 @import './components/modal';
-@import './main-page/advantages';
-@import './main-page/our-servises';
-@import './main-page/masters';
-@import './main-page/clients';
+@import './layouts/advantages';
+@import './layouts/our-servises';
+@import './layouts/masters';
+@import './layouts/clients';
 @import './components/footer';
-@import './portfolio-page/portfolio';
-@import './portfolio-page/portfolio-filter';
-@import './portfolio-page/portfolio-item';
+@import './layouts/portfolio';
+@import './layouts/portfolio-filter';
+@import './layouts/portfolio-item';
 
 
 

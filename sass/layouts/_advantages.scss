@@ -1,0 +1,40 @@
+.adv-section{
+    padding-top: 94px;
+}
+
+.advantages{
+    display: flex;
+    flex-direction: row;
+    letter-spacing: 0.03em;
+}
+
+.advantages .item{
+    width: 270px;
+    margin: 0;
+    padding: 0;
+}
+
+.advantages .item:not(:last-child){
+    margin-right: 30px;
+}
+
+.advantages h3{
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 10px;
+} 
+
+.advantages p{
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
+.icon-advantages{
+    width: 270px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: $background-color-light;
+}

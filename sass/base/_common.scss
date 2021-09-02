@@ -28,9 +28,23 @@ img{
 }
 
 .conteiner{
-    width: 1200px;
+    // width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
+
+    @media screen and (max-width: 480px){
+        width: 480px;
+        // background-color: wheat;
+    }
+    @media screen and (min-width: 768px){
+        width: 768px;
+        // background-color: wheat;
+    }
+
+    @media screen and (min-width: 1200px){
+        width: 1200px;
+        // background-color: wheat;
+    }
 }
 
 .link{

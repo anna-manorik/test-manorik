@@ -147,6 +147,12 @@ img {
   background-color: transparent;
   z-index: 100;
   fill: #212121;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-mobile:active {
+  fill: #2196F3;
 }
 
 .btn-mobile .btn-mobile__cross {
@@ -156,6 +162,12 @@ img {
 .btn-mobile.is-open .btn-mobile__cross {
   display: block;
   fill: #212121;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-mobile.is-open .btn-mobile__cross:active {
+  fill: #2196F3;
 }
 
 .btn-mobile.is-open .btn-mobile__burger {

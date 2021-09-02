@@ -1,5 +1,13 @@
 .footer{
     background-color: $background-color-dark;
+    
+    @media screen and (max-width: 767px){
+        width: 480px;
+    }
+
+    @media screen and (min-width: 768px){
+        width: 100%;
+    }
 }
 
 .footer .logo-studio{
@@ -8,8 +16,21 @@
 
 .footer > .conteiner{
     padding: 60px 0;
-    display: flex;
-    align-items: baseline;
+    text-align: center;
+
+    @media screen and (min-width: 1200px){
+        display: flex;
+        align-items: baseline;
+        text-align: start;
+    }
+}
+
+.footer-div{
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+    }
 }
 
 .footer p{
@@ -17,12 +38,17 @@
 }
 
 .footer-address{
-    margin-top: 26px;
+    padding: 20px 0 60px 0;
+    margin: 0 auto;
     width: 231px;
 
     font-weight: 400;
     line-height: 1.7;
     font-style: normal;
+
+    @media screen and (min-width: 1200px) {
+        padding: 26px 0 0 0;
+    }
 }
 
 .footer-contact{
@@ -40,19 +66,29 @@
 }
 
 .social-footer{
-    margin-left: 90px;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 90px;
+    }
+    
 }
 
 .h2-footer{
-    margin-bottom: 24px;
+    margin-bottom: 20px;
     text-transform: uppercase;
     color: $white-color;
     font-size: 14px;
     font-weight: 700;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 24px;
+    }
 }
 
 .social-contact-footer{
     display: flex;
+    justify-content: center;
 }
 
 .social-link-footer{
@@ -78,21 +114,32 @@
 }
 
 .follow-footer{
-    margin-left: 90px;
+    @media screen and (min-width: 1200px) {
+        margin-left: 90px;
+    }
 }
 
 .follow-form{
-    display: flex;
+
+    @media screen and (min-width: 1200px){
+        display: flex;
+    }
+    
 }
 
 .follow-input{
-    width: 358px;
+    width: 450px;
     background-color: #2F303A;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     padding: 16px;
-    margin-right: 14px;
+    margin-bottom: 20px;
     color: rgba(255, 255, 255, 0.3);
+
+    @media screen and (min-width: 1200px){
+        width: 358px;
+        margin-right: 14px;
+    }
 }
 
 @mixin follow-text($color, $font-size, $letter-spacing) {
@@ -109,6 +156,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
 
     width: 200px;
     height: 50px;

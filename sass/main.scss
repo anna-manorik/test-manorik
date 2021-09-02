@@ -1,9 +1,11 @@
 @import './utils/variables';
+@import './utils/breakpoints';
 @import './base/common';
 @import './components/header';
 @import './components/logo';
 @import './components/navigation';
 @import './components/header-contact';
+@import './components/nav-social';
 @import './layouts/hero';
 @import './components/modal';
 @import './layouts/advantages';

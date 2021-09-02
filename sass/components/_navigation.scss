@@ -19,11 +19,11 @@
 
     fill: $secondary-color;
 
-    // transition: fill 250ms $timing-function;
+    transition: fill 250ms $timing-function;
 
-    // &:active{
-    //     fill: $accent-color;
-    // }
+    &:active{
+        fill: $accent-color;
+    }
 
     & &__cross{
         display: none;
@@ -33,11 +33,11 @@
         display: block;
         fill: $secondary-color;
 
-        // transition: fill 250ms $timing-function;
+        transition: fill 250ms $timing-function;
 
-        // &:active{
-        //     fill: $accent-color;
-        // }
+        &:active{
+            fill: $accent-color;
+        }
     }
     
     &.is-open &__burger{

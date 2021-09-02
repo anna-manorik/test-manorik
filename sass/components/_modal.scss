@@ -24,8 +24,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 528px;
-    height: 582px;
+    width: 450px;
+    height: 609px;
     padding: 40px;
 
     display: flex;
@@ -37,6 +37,11 @@
 
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms $timing-function;
+
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+        height: 582px;
+    }
 }
 
 .backdrop.is-hidden .modal{
@@ -45,7 +50,7 @@
 
 .btn-close{
     position: absolute;
-    transform: translate(450px, -30px);
+    transform: translate(370px, -30px);
 
     width: 30px;
     height: 30px;
@@ -61,6 +66,10 @@
     &:hover,
     &:focus{
         color: $accent-color;
+    }
+
+    @media screen and (min-width: 1200px){
+        transform: translate(450px, -30px);
     }
 }
 
@@ -131,7 +140,7 @@
 
 .modal-svg{
     position: absolute;
-    transform: translate(10px, 70px);
+    transform: translate(10px, 93px);
     fill: $secondary-color;
 
     transition: fill 250ms $timing-function;
@@ -141,23 +150,43 @@
         fill: $accent-color;
         cursor: pointer;
     }
+
+    @media screen and (min-width: 1200px) {
+        transform: translate(10px, 70px);
+        
+    }
 }
 
 .svg-tel{
-    transform: translate(10px, 138px);
+    transform: translate(10px, 162px);
+
+    @media screen and (min-width: 1200px){
+        transform: translate(10px, 138px);
+    }
+    
 }
 
 .svg-email{
-    transform: translate(10px, 207px);
+    transform: translate(10px, 230px);
+
+    @media screen and (min-width: 1200px){
+        transform: translate(10px, 207px);
+    }
+    
 }
 
 .checkbox-modal{
     display: flex;
     margin-bottom: 30px;
+
+    @media screen and (max-width: 1200px) {
+        font-size: 12px;
+        letter-spacing: 0.03em;
+    }
 }
 
 .checkbox-modal input{
-    visibility: hidden;
+    display: none;
 }
 
 .checkbox{
@@ -165,8 +194,13 @@
     width: 16px;
     height: 15px;
     margin-right: 10px;
+    
     border: 2px solid $secondary-color;
     border-radius: 2px;
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 10px;
+    }
 }
 
 .checkbox-modal input:checked + .checkbox{

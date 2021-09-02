@@ -1,31 +1,36 @@
-.our-services-section{
-    padding: 94px 0;
+.our-services{
+    display: none;
+
+    @media screen and (min-width: 1200px){
+        display: block;
+        padding: 94px 0;
+    }
 }
 
-.our-services{
+.our-services__list{
     display: flex;
     flex-direction: row;
     margin-top: 58px;
+    
+    & .item{
+        margin: 0; /* for 'li' need to use 'margin:0' */
+        width: 370px;
+        position: relative;
+    }
+
+    & .item:not(:last-child){
+        margin-right: 30px;
+    }
 }
 
-.our-services .item{
-    margin: 0; /* for 'li' need to use 'margin:0' */
-    width: 370px;
-    position: relative;
-}
 
-.our-services .item:not(:last-child){
-    margin-right: 30px;
-}
-
-.our-services-discrip{
-    padding-top: 27px;
-
+.our-services__title{
     position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
     height: 70px;
+    padding-top: 27px;
     background-color: rgba(47, 48, 58, 0.8);
 
     color: #fff;

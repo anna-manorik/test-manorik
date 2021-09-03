@@ -32,11 +32,11 @@
         }
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1200px) {
-        &:first-child .portfolio-title{
-            height: 170px;
-        }
-    }
+    // @media screen and (min-width: 768px) and (max-width: 1200px) {
+    //     &:first-child .portfolio-title{
+    //         height: 170px;
+    //     }
+    // }
 
     @media screen and (min-width: 1200px) {
         width: 370px;
@@ -53,7 +53,9 @@
 }
 
 .portfolio-link{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     box-shadow: 0 0 0 white;
 
     transition: box-shadow 250ms $timing-function;
@@ -120,6 +122,10 @@
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
     padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 

@@ -35,23 +35,26 @@ img {
 
 .conteiner {
   padding: 0 15px;
+}
+
+.section {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 480px) {
-  .conteiner {
+@media screen and (min-width: 480px) {
+  .section {
     width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .conteiner {
+  .section {
     width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .conteiner {
+  .section {
     width: 1200px;
   }
 }
@@ -96,10 +99,12 @@ img {
 }
 
 .header {
-  border-bottom: 1px solid #fcfcfc;
+  border-bottom: 1px solid #ECECEC;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .logo-web, .logo-studio {
@@ -129,6 +134,7 @@ img {
           align-items: flex-end;
   width: 100%;
   padding: 15px;
+  margin: 0 auto;
 }
 
 .btn-mobile {
@@ -428,7 +434,7 @@ img {
 }
 
 .hero {
-  width: 480px;
+  width: 100%;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -442,7 +448,7 @@ img {
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero .box {
+  .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-480-2x.jpg);
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-480-2x.jpg);
   }
@@ -450,7 +456,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .hero {
-    width: 768px;
+    width: 100%;
     height: 400px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-768-1x.jpg);
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-768-1x.jpg);
@@ -458,7 +464,7 @@ img {
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .hero .box {
+  .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-768-2x.jpg);
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-768-2x.jpg);
   }
@@ -466,7 +472,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1600px;
+    max-width: 1600px;
     height: 600px;
     padding: 200px 0;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-1200-1x.jpg);
@@ -475,7 +481,7 @@ img {
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .hero .box {
+  .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-1200-2x.jpg);
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-1200-2x.jpg);
   }
@@ -487,7 +493,7 @@ h1, .button-hero {
 }
 
 h1 {
-  width: 360px;
+  max-width: 360px;
   margin: auto;
   margin-bottom: 30px;
   padding: auto;
@@ -824,7 +830,7 @@ h1 {
 }
 
 .advantages__list .item {
-  width: 450px;
+  max-width: 450px;
   margin-bottom: 30px;
   padding: 0;
 }
@@ -867,7 +873,7 @@ h1 {
 }
 
 .advantages__icon {
-  width: 450px;
+  max-width: 450px;
   height: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -946,18 +952,7 @@ h1 {
 .masters {
   background-color: #F5F4FA;
   padding: 94px 0;
-}
-
-@media screen and (max-width: 767px) {
-  .masters {
-    width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .masters {
-    width: 100%;
-  }
+  margin: 0 auto;
 }
 
 .masters__list {
@@ -982,7 +977,7 @@ h1 {
 
 .masters__list .item {
   background-color: #fff;
-  width: 450px;
+  max-width: 450px;
   margin-bottom: 30px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1071,6 +1066,11 @@ h1 {
 
 .clients {
   padding: 60px 0;
+  margin: 0 auto;
+}
+
+.clients > .conteiner {
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1089,6 +1089,8 @@ h1 {
 }
 
 .clients__list .item {
+  -ms-flex-preferred-size: calc((100% / 2) - 15px);
+      flex-basis: calc((100% / 2) - 15px);
   margin-bottom: 30px;
 }
 
@@ -1101,6 +1103,10 @@ h1 {
 }
 
 @media screen and (min-width: 768px) {
+  .clients__list .item {
+    -ms-flex-preferred-size: 226px;
+        flex-basis: 226px;
+  }
   .clients__list .item:nth-child(2n+1) {
     margin-right: 0;
   }
@@ -1114,11 +1120,11 @@ h1 {
 
 @media screen and (min-width: 1200px) {
   .clients__list {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
     margin-bottom: 0;
+  }
+  .clients__list .item {
+    -ms-flex-preferred-size: 170px;
+        flex-basis: 170px;
   }
   .clients__list .item:not(:last-child) {
     margin-right: 30px;
@@ -1135,7 +1141,6 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 210px;
   height: 92px;
   fill: #AFB1B8;
   border: 1px solid #AFB1B8;
@@ -1149,32 +1154,9 @@ h1 {
   border: 1px solid #2196F3;
 }
 
-@media screen and (min-width: 768px) {
-  .client__link {
-    width: 226px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .client__link {
-    width: 170px;
-  }
-}
-
 .footer {
   background-color: #2F303A;
-}
-
-@media screen and (max-width: 767px) {
-  .footer {
-    width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .footer {
-    width: 100%;
-  }
+  margin: 0 auto;
 }
 
 .footer .logo-studio {
@@ -1188,6 +1170,7 @@ h1 {
 
 @media screen and (min-width: 1200px) {
   .footer > .conteiner {
+    width: 1200px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1195,6 +1178,7 @@ h1 {
         -ms-flex-align: baseline;
             align-items: baseline;
     text-align: start;
+    margin: 0 auto;
   }
 }
 
@@ -1318,13 +1302,20 @@ h1 {
 }
 
 .follow-input {
-  width: 450px;
+  width: 90%;
   background-color: #2F303A;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   padding: 16px;
   margin-bottom: 20px;
   color: rgba(255, 255, 255, 0.3);
+}
+
+@media screen and (min-width: 768px) {
+  .follow-input {
+    width: 55%;
+    margin-right: 14px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1406,7 +1397,7 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 48px;
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1414,6 +1405,13 @@ h1 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 28px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-menu {
+    margin-bottom: 48px;
   }
 }
 
@@ -1436,12 +1434,12 @@ h1 {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-menu .item:not(:nth-child(n+4)) {
+.portfolio-menu .item {
   margin-bottom: 15px;
 }
 
 @media screen and (min-width: 768px) {
-  .portfolio-menu .item:not(:nth-child(n+4)) {
+  .portfolio-menu .item {
     margin-bottom: 0;
   }
 }
@@ -1473,12 +1471,8 @@ h1 {
       flex-wrap: wrap;
 }
 
-.portfolio-items img {
-  margin: 0;
-  padding: 0;
-}
-
 .portfolio-items > .item {
+  display: block;
   width: 450px;
   margin-bottom: 30px;
   padding: 0;
@@ -1542,10 +1536,6 @@ h1 {
   overflow: hidden;
 }
 
-.portfolio-img img {
-  width: 100%;
-}
-
 .portfolio-discrip {
   content: '';
   display: inline-block;
@@ -1578,6 +1568,7 @@ h1 {
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
+  letter-spacing: 0.06em;
   color: #212121;
 }
 
@@ -1585,13 +1576,14 @@ h1 {
   color: #757575;
   font-size: 16px;
   line-height: 2;
+  letter-spacing: 0.03em;
 }
 
 .portfolio-title {
   border-right: 1px solid #EEEEEE;
   border-bottom: 1px solid #EEEEEE;
   border-left: 1px solid #EEEEEE;
-  padding: 30px;
+  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1602,6 +1594,12 @@ h1 {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-title {
+    padding: 26px;
+  }
 }
 
 .portfolio-title h3 {

@@ -23,7 +23,7 @@
     }
 
     & .item{
-        width: 450px;
+        max-width: 450px;
         margin-bottom: 30px;
         padding: 0;
     }
@@ -71,7 +71,7 @@
 
 
 .advantages__icon{
-    width: 450px;
+    max-width: 450px;
     height: 120px;
     display: flex;
     justify-content: center;

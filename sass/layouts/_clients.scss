@@ -1,5 +1,10 @@
 .clients{
     padding: 60px 0;
+    margin: 0 auto;
+
+    & > .conteiner{
+        margin: 0 auto;
+    }
 
 @media screen and (min-width: 1200px){
     padding: 94px 0;
@@ -12,6 +17,7 @@
     margin-top: 50px;
 
     & .item{
+        flex-basis: calc((100% / 2) - 15px);
         margin-bottom: 30px;
     }
 
@@ -24,6 +30,11 @@
     }
 
     @media screen and (min-width: 768px) {
+
+        & .item{
+            flex-basis: 226px;
+        }
+
         & .item:nth-child(2n+1){
             margin-right: 0;
         }
@@ -38,8 +49,11 @@
     }
 
     @media screen and (min-width: 1200px) {
-        flex-direction: row;
         margin-bottom: 0;
+
+        & .item{
+            flex-basis: 170px;
+        }
 
         & .item:not(:last-child){
             margin-right: 30px;
@@ -53,7 +67,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 210px;
     height: 92px;
     
     fill: $icon-color;
@@ -67,14 +80,6 @@
     &:focus{
         fill: $accent-color;
         border: 1px solid $accent-color;
-    }
-
-    @media screen and (min-width: 768px) {
-        width: 226px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        width: 170px;
     }
 }
 

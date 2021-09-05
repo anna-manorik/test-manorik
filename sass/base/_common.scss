@@ -30,10 +30,8 @@ img{
 .conteiner{
     // width: 1200px;
     padding: 0 15px;
-}
-
-.section{
     margin: 0 auto;
+
 
     @media screen and (min-width: 480px){
         width: 480px;
@@ -46,7 +44,6 @@ img{
     @media screen and (min-width: 1200px){
         width: 1200px;
     }
-
 }
 
 .link{

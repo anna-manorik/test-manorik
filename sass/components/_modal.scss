@@ -8,7 +8,7 @@
 
     opacity: 1;
     transition: opacity 250ms $timing-function;
-    z-index: 10;
+    z-index: 200;
 }
 
 .backdrop.is-hidden{
@@ -22,7 +22,7 @@
 
 .modal{
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     width: 450px;
     height: 609px;
@@ -38,8 +38,12 @@
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms $timing-function;
 
-    // @media screen and (max-width: 320px) {
-    //     width: 320px;
+    @media screen and (max-width: 479px) {
+        max-width: 350px;
+    }
+
+    // @media screen and (min-width: 768px) {
+    //     top: 80%;
     // }
 
     @media screen and (min-width: 1200px) {
@@ -70,6 +74,10 @@
     &:hover,
     &:focus{
         color: $accent-color;
+    }
+
+    @media screen and (max-width: 479px) {
+        transform: translate(270px, -30px);
     }
 
     @media screen and (min-width: 1200px){
@@ -202,6 +210,10 @@
     border: 2px solid $secondary-color;
     border-radius: 2px;
 
+    @media screen and (max-width: 479px) {
+        width: 21px;
+    }
+
     @media screen and (min-width: 1200px) {
         margin-left: 10px;
     }
@@ -212,6 +224,10 @@
     height: 15px;
     border: 0;
     background-image: url(../images/icon-check.svg);
+}
+
+.checkbox-policy-discrip{
+    text-align: left;
 }
 
 .btn-submit-modal{

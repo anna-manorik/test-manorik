@@ -552,7 +552,7 @@ h1 {
   opacity: 1;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 10;
+  z-index: 200;
 }
 
 .backdrop.is-hidden {
@@ -563,7 +563,7 @@ h1 {
 /* Start Modal window styles */
 .modal {
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 50%;
   width: 450px;
   height: 609px;
@@ -586,6 +586,12 @@ h1 {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 479px) {
+  .modal {
+    max-width: 350px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -617,6 +623,13 @@ h1 {
 
 .btn-close:hover, .btn-close:focus {
   color: #2196F3;
+}
+
+@media screen and (max-width: 479px) {
+  .btn-close {
+    -webkit-transform: translate(270px, -30px);
+            transform: translate(270px, -30px);
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -776,6 +789,12 @@ h1 {
   border-radius: 2px;
 }
 
+@media screen and (max-width: 479px) {
+  .checkbox {
+    width: 21px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .checkbox {
     margin-left: 10px;
@@ -787,6 +806,10 @@ h1 {
   height: 15px;
   border: 0;
   background-image: url(../images/icon-check.svg);
+}
+
+.checkbox-policy-discrip {
+  text-align: left;
 }
 
 .btn-submit-modal {

@@ -80,7 +80,7 @@
     left: 0;
     top: 0;
     width: 100%;
-    height: 294px;
+    height: 100%;
     background-color: rgba(33, 150, 243, 0.9);
 
     color: $white-color;
@@ -88,6 +88,12 @@
     text-align: left;
     letter-spacing: 0.03em;
     line-height: 1.6;
+
+    @media screen and (max-width: 479px) {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+    }
     
     transform: translateY(100%);
     transition: transform 250ms $timing-function;

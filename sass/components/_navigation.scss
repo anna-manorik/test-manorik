@@ -6,6 +6,7 @@
     width: 480px;
     padding: 15px;
     margin: 0 auto;
+
 }
 
 .btn-mobile{
@@ -44,6 +45,10 @@
     
     &.is-open &__burger{
         display: none;
+    }
+    
+    &.is-open svg{
+        position: fixed;
     }
 
     @media screen and (min-width: 768px){

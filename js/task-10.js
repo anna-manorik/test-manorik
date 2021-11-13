@@ -14,15 +14,15 @@ function createBoxes(amount) {
       boxesConteiner.insertAdjacentHTML(`beforeend`, `<div></div>`);
     }
 
-    const changeBoxWidth = boxesConteiner.children;
+    const setBoxStyles = boxesConteiner.children;
     let param = 20;
 
-    for(let i=0; i<changeBoxWidth.length; i+=1){
+    for(let i=0; i<setBoxStyles.length; i+=1){
       param += 10;
-      changeBoxWidth[i].classList.add("squere");
-      changeBoxWidth[i].style.width = param + "px";
-      changeBoxWidth[i].style.height = param + "px";
-      changeBoxWidth[i].style.backgroundColor = getRandomHexColor();
+      setBoxStyles[i].classList.add("squere");
+      setBoxStyles[i].style.width = param + "px";
+      setBoxStyles[i].style.height = param + "px";
+      setBoxStyles[i].style.backgroundColor = getRandomHexColor();
     }
 
   });

@@ -12,13 +12,14 @@ form.addEventListener("submit", (event) => {
 
     if(allInputs.email === "" || allInputs.password === ""){
         alert("Inputs can't be empty!");
+    } else {
+        console.log(allInputs);
     }
-
-    console.log(allInputs);  
 
     const inputs = document.querySelectorAll("input");
 
     inputs.forEach(input => {
         input.value = "";
     })
+
 })

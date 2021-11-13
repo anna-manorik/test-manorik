@@ -15,15 +15,13 @@ function createBoxes(amount) {
     }
 
     const changeBoxWidth = boxesConteiner.children;
-    let width = 20;
-    let height = 20;
+    let param = 20;
 
     for(let i=0; i<changeBoxWidth.length; i+=1){
-      width += 10;
-      height += 10
+      param += 10;
       changeBoxWidth[i].classList.add("squere");
-      changeBoxWidth[i].style.width = width + "px";
-      changeBoxWidth[i].style.height = height + "px";
+      changeBoxWidth[i].style.width = param + "px";
+      changeBoxWidth[i].style.height = param + "px";
       changeBoxWidth[i].style.backgroundColor = getRandomHexColor();
     }
 

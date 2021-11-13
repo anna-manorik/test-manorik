@@ -14,9 +14,9 @@ const newIngredients = ingredients.map(ingredient => {
   heading.textContent = ingredient;
   heading.classList.add("item");
   addIngredients.append(heading);
+}).join("");
 
-  // console.log(heading);
-})
+addIngredients.insertAdjacentHTML("beforeend", newIngredients);
 
-console.log(addIngredients);
+// console.log(addIngredients);
 

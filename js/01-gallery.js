@@ -27,18 +27,20 @@ gallery.addEventListener("click", event => {
     }
 
     const url = event.target.dataset.source;
-    const instance = basicLightbox.create(`<img src="${url}" width="800" height="600">`);
+    const instance = basicLightbox.create(`<img src="${url}" width="800" height="600">`, {
+        onClose: (instance) => {
+            window.removeEventListener("keydown", event => {
+                if(event.code === "Escape"){
+                    instance.close();
+                }
+            });
+        }
+    });
 
     instance.show();
 
 
     window.addEventListener("keydown", event => {
-        if(event.code === "Escape"){
-            instance.close();
-        }
-    });
-
-    window.removeEventListener("keydown", event => {
         if(event.code === "Escape"){
             instance.close();
         }

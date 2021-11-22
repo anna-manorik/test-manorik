@@ -5,13 +5,13 @@ const gallery = document.querySelector(".gallery");
 
 const markup = galleryItems.map(image => {
     return `
-        <a class="gallery__item" href="${image.original}">
+        <li><a class="gallery__item" href="${image.original}">
             <img
             class="gallery__image"
             src="${image.preview}"
             alt="${image.description}"
             />
-        </a>`
+        </a></li>`
 }).join("");
 
 gallery.insertAdjacentHTML("beforeend", markup);
